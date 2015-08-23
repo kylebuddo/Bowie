@@ -1,0 +1,272 @@
+@import '0-plugins/plugins-dir'
+
+$thered: #f34840
+$thegrey: #eaeaea
+
+body
+	font:
+		family: Helvetica, sans-serif
+	background-color: white
+
+::selection
+	background: $thered /* WebKit/Blink Browsers */
+	color: white
+
+::-moz-selection 
+	background: $thered /* Gecko Browsers */
+	color: white
+
+		
+// Header Section
+.header-holder
+	padding: 0 20px
+	margin: 0 38px
+	position: relative
+
+	header
+		background-color: white
+		max-width: 1200px
+		position: relative
+		display: flex
+
+		.logo
+			background:
+				color: white
+			padding: 25px 15px
+			position: absolute
+			top: -10px
+			left: 0px
+			z-index: 3
+
+			&:hover
+				cursor: pointer
+
+			img
+				height: 111px
+				width: 137px
+
+		nav
+			margin-left: 193px
+
+			ul
+				list-style: none
+				margin: 0px 0px 6px 0px
+				padding: 0px
+				position: relative
+
+				li
+					display: inline-block
+
+					&:first-of-type
+						
+						a
+							color: red
+
+							&:hover
+								color: $thered
+
+					a
+						text-decoration: none
+						font:
+							weight: bolder
+							size: 15px
+						padding: 30px 15px
+						display: block
+						color: black
+
+						&:hover
+							background-color: #333
+							color: #a3a3a3
+	
+.red-banner
+	width: 100%
+	height: 80px
+	background-color: $thered
+	position: relative
+	bottom: 60px
+	left: 0px
+	z-index: -2
+
+// Main Bowie Section
+.bowie-hold-me
+	width: 100%
+	position: relative
+	top: -76px
+	margin-bottom: 50px
+
+	
+	// red background
+	.red-bg
+		background-color: $thered
+		height: 90%
+		border-bottom: 100px solid white
+		position: absolute
+		z-index: -1
+		width: 100%
+
+	// main content and layout
+	.container-for-all
+		width: 100%
+		padding: 0px 20px
+		margin: 0px auto
+		max-width: 1200px
+
+		.lets-bowie
+			margin-left: auto
+			margin-right: auto
+			max-width: 1200px
+
+			.text-holder
+				min-height: 516px
+				width: 40%
+				margin-left: 60%
+				color: white
+
+				.bowie-box
+					width: 100%
+					padding-top: 20px
+
+					img
+						display: block
+						position: absolute
+						top: 0px
+						right: 40%
+						width: auto
+						height: 100%
+						margin-right: 25px
+						margin-top: 25px
+
+					span
+						position: absolute
+						right: 40%
+						width: 50%
+						top: 495px
+						background: $thegrey
+						z-index: 2
+						margin-right: 25px
+						display: block
+						padding: 16px
+						color: #000000
+						font-size: 12px
+						font-style: italic
+
+			h3
+				font:
+					size: 10px
+					weight: bold
+				color: black
+
+			h1
+				font:
+					size: 40px
+				margin: 18px 0
+
+			h2
+				font:
+					size: 12px
+					weight: bold
+				color: black
+
+			p
+				font-size: 14px
+				line-height: 22px
+				margin-bottom: 15px
+				padding-right: 15px
+
+			.ticket	
+				text-transform: uppercase
+				font-size: 12px
+				margin-top: 20px
+
+			
+// Buy Section
+.buy-holder
+	width: 100%
+	height: 60px
+	position: relative
+	top: -0px
+	background-color: white
+	margin-bottom: 0px
+	z-index: 3
+
+	.buy-cuddles
+		margin: 0px 38px
+		padding: 0px 20px
+
+		ul
+			list-style: none
+			display: flex
+			justify-content: center
+			margin: 0px
+
+			li
+				padding: 17px 35px 20px 35px
+				font-weight: 900
+				font-size: 19px
+				color: black
+
+				&:first-of-type
+					color: $thered
+
+
+				&:hover
+					cursor: pointer
+
+
+	
+	hr
+		border: none
+		height: 1px
+		color: $thegrey
+		background-color: $thegrey
+		margin: 0px
+// add this to make buy ticket bar stick
+.sticky
+	position: fixed
+
+
+// Text section
+.slide-in
+	width: 100%
+	//margin-bottom: 200px
+	position: relative
+	top: -76px
+	//background-color: pink
+
+	.cuddleme
+		margin: 0px 38px
+		padding: 0px 20px
+		display: flex
+		position: relative
+		top: 150px
+		transform: translateY(0px)
+
+
+
+		.wordy
+			font:
+				size: 13px
+				family: Helvetica
+			line-height: 25px
+			//background-color: green
+
+			p
+				padding-right: 40px
+				color: #333
+
+			img
+				display: block
+
+				&:first-of-type
+					margin-top: 60px
+
+		.videobox
+			padding-top: 15px
+			//background-color: skyblue
+
+
+			img
+				width: auto
+		
+.hold-tight
+	top: 0px
